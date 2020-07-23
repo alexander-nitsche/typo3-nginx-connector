@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  AlexanderNitsche\NginxConnector\:
+    resource: '../Classes/*'
+
+  AlexanderNitsche\NginxConnector\Hooks\TypoScriptFrontendControllerHook:
+    public: true

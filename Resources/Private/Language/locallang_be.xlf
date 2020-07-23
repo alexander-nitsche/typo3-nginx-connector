@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:nginx_connector/Resources/Private/Language/locallang_be.xlf" date="2020-07-26T16:08:16Z" product-name="nginx_connector">
+		<header/>
+		<body>
+			<trans-unit id="config.baseUrl" resname="config.baseUrl">
+				<source>Nginx cache base url</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

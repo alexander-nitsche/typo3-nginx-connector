@@ -1,0 +1,44 @@
+{
+  "name": "alexandernitsche/typo3-nginx-connector",
+  "description": "Nginx cache connector for TYPO3",
+  "type": "typo3-cms-extension",
+  "version": "0.1.0",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "nginx",
+    "cache",
+    "connector"
+  ],
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Alexander Nitsche",
+      "email": "typo3@alexandernitsche.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^10.4.0"
+  },
+  "require-dev": {},
+  "conflict": {
+    "qbus/nginx-cache": "*"
+  },
+  "suggest": {},
+  "autoload": {
+    "psr-4": {
+      "AlexanderNitsche\\NginxConnector\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AlexanderNitsche\\NginxConnector\\Tests\\": "Tests"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "nginx_connector"
+    }
+  }
+}
