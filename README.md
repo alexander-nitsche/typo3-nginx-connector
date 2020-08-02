@@ -26,8 +26,7 @@ implementation, for example this
 The Nginx cache can be used to cache responses from the TYPO3 frontend and thus to reduce server load significantly.
 The creation and lifetime of cache entries depend on the TYPO3 response headers _ETag_, _Cache-Control_
 and _Expires_ which are emitted if the TYPO3 configuration property
-[config.sendCacheHeaders]
-(https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Setup/Config/Index.html#sendcacheheaders) 
+[config.sendCacheHeaders](https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Setup/Config/Index.html#sendcacheheaders) 
 is set.
 The cache entries are file based and have the hashed request url as filename.
 Now in order to enable TYPO3 to flush the Nginx cache along with its own, this extension stores the request url
