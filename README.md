@@ -18,8 +18,8 @@ Provides an Nginx cache connector which purges cached responses in Nginx along w
 The handling of cache purges on Nginx side can be managed by the non-free, commercial Nginx module
 [ngx_cache_purge](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#purger) or by a custom
 implementation, for example this
-[Perl implementation](https://github.com/qbus-agentur/nginx_cache#nginx-configuration>)
-- Perl scripts are supported by Nginx natively.
+[Perl implementation](https://github.com/qbus-agentur/nginx_cache#nginx-configuration>) 
+– Perl scripts are supported by Nginx natively.
 
 ## Technical Background
 

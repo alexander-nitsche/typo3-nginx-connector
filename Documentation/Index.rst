@@ -25,7 +25,7 @@ The handling of cache purges on Nginx side can be managed by the non-free, comme
 `ngx_cache_purge <https://nginx.org/en/docs/http/ngx_http_proxy_module.html#purger>`__ or by a custom
 implementation, for example this
 `Perl implementation <https://github.com/qbus-agentur/nginx_cache#nginx-configuration>`__
-- Perl scripts are supported by Nginx natively.
+– Perl scripts are supported by Nginx natively.
 
 Technical Background
 ====================
