@@ -1,10 +1,35 @@
-.. include:: Documentation/Includes.txt
+.. include:: Includes.txt
 
-=================================
-TYPO3 Extension `nginx_connector`
-=================================
+.. _start:
 
-Provides an Nginx cache connector which purges cached responses in Nginx along with cached pages in TYPO3.
+===============
+Nginx Connector
+===============
+
+:Extension key:
+   nginx_connector
+
+:Version:
+   |release|
+
+:Language:
+   en
+
+:Authors:
+   Alexander Nitsche
+
+:Email:
+   typo3@alexandernitsche.com
+
+:License:
+   Open Content License available from `www.opencontent.org/openpub/
+   <http://www.opencontent.org/openpub/>`_
+
+:Rendered:
+   |today|
+
+This extension provides an Nginx cache connector which purges cached responses in Nginx along with cached pages in
+TYPO3.
 
 Features
 ========
