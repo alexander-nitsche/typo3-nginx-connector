@@ -1,5 +1,5 @@
-TYPO3 Extension `nginx_connector`
-=================================
+TYPO3 Extension ``nginx_connector``
+===================================
 
 Provides an Nginx cache connector which purges cached responses in Nginx along with cached pages in TYPO3.
 
@@ -7,8 +7,8 @@ Features
 --------
 
 1. Configurable Nginx base url
-2. Sends `PURGE {Nginx base url}/*` when flushing the frontend or all caches in the TYPO3 backend.
-3. Sends `PURGE {Nginx request url}` for all cached responses associated with a page when flushing its page cache in the
+2. Sends ``PURGE {Nginx base url}/*`` when flushing the frontend or all caches in the TYPO3 backend.
+3. Sends ``PURGE {Nginx request url}`` for all cached responses associated with a page when flushing its page cache in the
    TYPO3 backend.
 4. Detects and handles failed Nginx purge requests.
 
@@ -28,8 +28,8 @@ Technical Background
 --------------------
 
 The Nginx cache can be used to cache responses from the TYPO3 frontend and thus to reduce server load significantly.
-The creation and lifetime of cache entries depend on the TYPO3 response headers _ETag_, _Cache-Control_
-and _Expires_ which are emitted if the TYPO3 configuration property
+The creation and lifetime of cache entries depend on the TYPO3 response headers *ETag*, *Cache-Control*
+and *Expires* which are emitted if the TYPO3 configuration property
 `config.sendCacheHeaders
 <https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Setup/Config/Index.html#sendcacheheaders>`__
 is set.
