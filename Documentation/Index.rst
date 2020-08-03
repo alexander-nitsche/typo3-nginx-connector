@@ -43,8 +43,8 @@ Features
 Out of Scope
 ============
 
-#. Nginx: Handling of incoming PURGE requests
-#. Nginx: Deleting of cached responses
+- Nginx: Handling of incoming PURGE requests
+- Nginx: Deleting of cached responses
 
 The handling of cache purges on Nginx side can be managed by the non-free, commercial Nginx module
 `ngx_cache_purge <https://nginx.org/en/docs/http/ngx_http_proxy_module.html#purger>`__ or by a custom
