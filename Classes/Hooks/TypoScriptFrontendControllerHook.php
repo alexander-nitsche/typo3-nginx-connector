@@ -46,7 +46,8 @@ final class TypoScriptFrontendControllerHook
     {
         $requestUrl = GeneralUtility::getIndpEnv('TYPO3_REQUEST_URL');
         $pageCache = $this->cacheManager->getCache('nginx_connector');
+        $lifetime = $timeOutTime - $GLOBALS['EXEC_TIME'];
 
-        $pageCache->set(md5($requestUrl), $requestUrl, $tsfe->getPageCacheTags(), $timeOutTime);
+        $pageCache->set(md5($requestUrl), $requestUrl, $tsfe->getPageCacheTags(), $lifetime);
     }
 }
