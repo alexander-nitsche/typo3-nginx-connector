@@ -37,7 +37,7 @@ final class TypoScriptFrontendControllerHook
     }
 
     /**
-     * Hook for page cache post processing
+     * Hook for page cache creation
      *
      * @param TypoScriptFrontendController $tsfe
      * @param int $timeOutTime
@@ -49,5 +49,20 @@ final class TypoScriptFrontendControllerHook
         $lifetime = $timeOutTime - $GLOBALS['EXEC_TIME'];
 
         $pageCache->set(md5($requestUrl), $requestUrl, $tsfe->getPageCacheTags(), $lifetime);
+    }
+
+    /**
+     * Hook for page cache loading
+     *
+     * @param array $parameters
+     */
+    public function handlePageLoadedFromCache(array &$parameters): void
+    {
+        $requestUrl = GeneralUtility::getIndpEnv('TYPO3_REQUEST_URL');
+        $pageCache = $this->cacheManager->getCache('nginx_connector');
+        $cachedData = $parameters['cache_pages_row'];
+        $lifetime = $cachedData['expires'] - $GLOBALS['EXEC_TIME'];
+
+        $pageCache->set(md5($requestUrl), $requestUrl, $cachedData['cacheTags'], $lifetime);
     }
 }

@@ -12,3 +12,6 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['nginx_conn
 
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['insertPageIncache'][] =
     \AlexanderNitsche\NginxConnector\Hooks\TypoScriptFrontendControllerHook::class;
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['pageLoadedFromCache'][] =
+    \AlexanderNitsche\NginxConnector\Hooks\TypoScriptFrontendControllerHook::class . '->handlePageLoadedFromCache';
