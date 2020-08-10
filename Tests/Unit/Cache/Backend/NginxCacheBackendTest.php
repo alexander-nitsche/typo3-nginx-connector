@@ -13,7 +13,7 @@
  * The TYPO3 project - inspiring people to share!
  */
 
-namespace AlexanderNitsche\NginxConnector\Tests\Cache\Backend;
+namespace AlexanderNitsche\NginxConnector\Tests\Unit\Cache\Backend;
 
 use AlexanderNitsche\NginxConnector\Cache\Backend\NginxCacheBackend;
 use GuzzleHttp\Client as GuzzleClient;
