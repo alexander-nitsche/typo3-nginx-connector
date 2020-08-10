@@ -13,7 +13,7 @@
 		 verbose="false">
 
 	<testsuites>
-		<testsuite name="EXT:nginx_connector tests">
+		<testsuite name="EXT:nginx_connector unit tests">
 			<directory>../Unit/</directory>
 		</testsuite>
 	</testsuites>
