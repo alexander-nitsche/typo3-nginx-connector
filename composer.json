@@ -2,7 +2,7 @@
   "name": "alexandernitsche/typo3-nginx-connector",
   "description": "Nginx cache connector for TYPO3",
   "type": "typo3-cms-extension",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "keywords": [
     "TYPO3",
     "extension",
