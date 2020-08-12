@@ -1,0 +1,13 @@
+config {
+	no_cache = 0
+	debug = 0
+	admPanel = 0
+	disableAllHeaderCode = 1
+	sendCacheHeaders = 1
+	sendCacheHeaders_onlyWhenLoginDeniedInBranch = 1
+}
+
+# Default PAGE object:
+page = PAGE
+page.10 = TEXT
+page.10.value = HELLO WORLD OF FUNCTIONAL TESTS!!!
