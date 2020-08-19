@@ -1,0 +1,38 @@
+.. uml::
+
+   actor Browser
+   participant Nginx
+   database "Nginx Cache" as NginxCache
+   participant TYPO3
+   database "TYPO3 Nginx Connector" as Typo3NginxConnector
+
+   == First Page Request ==
+
+   Browser -> Nginx: Request
+   Nginx -> NginxCache: Cached Response?
+   Nginx <-- NginxCache: No.
+   Nginx -> TYPO3: Request
+   TYPO3 -> Typo3NginxConnector: Save Request Url with Page ID
+   TYPO3 <-- Typo3NginxConnector: Ok.
+   Nginx <-- TYPO3: Response
+   Nginx -> NginxCache: Cache Response
+   Nginx <-- NginxCache: Ok.
+   Browser <-- Nginx: Response
+
+   == Next Page Request ==
+
+   Browser -> Nginx: Request
+   Nginx -> NginxCache: Cached Response?
+   Nginx <-- NginxCache: Yes!
+   Browser <-- Nginx: Response
+
+   == Clear Page Cache ==
+
+   TYPO3 -> Typo3NginxConnector: Page ID
+   TYPO3 <-- Typo3NginxConnector: Request Urls by Page ID
+   TYPO3 -> Nginx: Purge Request Urls
+   Nginx -> NginxCache: Purge Request Urls
+   Nginx <-- NginxCache: Ok.
+   TYPO3 <-- Nginx: Ok.
+   TYPO3 -> Typo3NginxConnector: Delete Request Urls
+   TYPO3 <-- Typo3NginxConnector: Ok.
