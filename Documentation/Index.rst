@@ -26,7 +26,7 @@ Nginx Connector
    <http://www.opencontent.org/openpub/>`_
 
 :Rendered:
-   |today|
+   |today| GMT
 
 This extension provides an Nginx cache connector which purges cached responses in Nginx along with cached pages in
 TYPO3.
