@@ -1,5 +1,5 @@
 {
-  "name": "alexandernitsche/typo3-nginx-connector",
+  "name": "alexander-nitsche/typo3-nginx-connector",
   "description": "Nginx cache connector for TYPO3",
   "type": "typo3-cms-extension",
   "version": "0.3.0",
