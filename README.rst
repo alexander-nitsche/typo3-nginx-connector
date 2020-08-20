@@ -34,4 +34,5 @@ or contact the author via Slack or Email.
 Further information
 -------------------
 
-For further information about this extension, please see the official extension manual.
+For further information about this extension, please see the
+`official extension manual <https://docs.typo3.org/p/alexander-nitsche/typo3-nginx-connector/1.0/en-us/>`__.
