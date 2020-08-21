@@ -21,6 +21,9 @@ Nginx Connector
 :Email:
    typo3@alexandernitsche.com
 
+:Repository:
+   https://extensions.typo3.org/extension/nginx_connector/
+
 :License:
    Open Content License available from `www.opencontent.org/openpub/
    <http://www.opencontent.org/openpub/>`_
