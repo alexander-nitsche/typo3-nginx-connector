@@ -2,7 +2,6 @@
   "name": "alexander-nitsche/typo3-nginx-connector",
   "description": "Nginx cache connector for TYPO3",
   "type": "typo3-cms-extension",
-  "version": "1.0.0",
   "keywords": [
     "TYPO3",
     "extension",
@@ -35,6 +34,10 @@
     "psr-4": {
       "AlexanderNitsche\\NginxConnector\\Tests\\": "Tests"
     }
+  },
+  "replace": {
+    "alexander-nitsche/nginx-connector": "self.version",
+    "typo3-ter/nginx-connector": "self.version"
   },
   "extra": {
     "typo3/cms": {
