@@ -27,7 +27,7 @@ implementation, for example this
 Found a problem in this repo?
 -----------------------------
 
-If you find any problems in this sample manual, please add an
+If you find any problems in this manual, please add an
 `Issue <https://github.com/alexander-nitsche/typo3-nginx-connector/issues>`__,
 or contact the author via Slack or Email.
 
